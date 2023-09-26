@@ -22,7 +22,7 @@ Let's connect and explore how we can collaborate to create a more innovative and
 
 ## Projects
 
-###(Under Construction)
+### (Under Construction)
 My projects start here with my personal portfolio website. I will be filling this up with other projects i will be working on alongside this, over the course of the next couple of weeks.
 
 ### Project 1: Project Name
