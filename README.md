@@ -40,19 +40,19 @@ My projects start here with my personal portfolio website. I will be filling thi
 
 List your technical skills and tools you're proficient in. You can include programming languages, frameworks, design tools, or anything else relevant.
 
-###Programming
+### Programming
 Python, Java, C, C++, Verilog, MATLAB, SQL, Haskell.
 
-###Web development
+### Web development
 - HTML, CSS, JavaScript
   
-###Frameworks
+### Frameworks
 - React, Node.js
   
-###Software tools
+### Software tools
 - Adobe Photoshop, Sketch, GitHub, Microsoft Office Suite, Autodesk Inventor, Latex, Discord, Adobe Creative.
   
-###Soft Skills
+### Soft Skills
 - Effective communication, multitasking, team collaboration, feedback acceptance, good time management, problem-solving.
   
 ![image](https://github.com/Awurama-N/awurama_portfolio/assets/72299644/68513629-546b-4276-a3e7-10a19c7e714e)
