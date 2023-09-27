@@ -1,4 +1,10 @@
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: #e991a7;
   margin: 0;
@@ -42,6 +48,8 @@ li > a {
   text-decoration: none;
 }
 
+
+
 nav > ul > li {
   color: #dfdfe2;
 }
@@ -54,7 +62,7 @@ nav > ul > li:hover {
 
 h1 {
   font-family: 'overpass', sans-serif;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   color: #9A1750;
 }
@@ -63,7 +71,7 @@ h2 {
   font-family: 'overpass', sans-serif;
   font-weight: lighter;
   color: #dfdfe2;
-  max-width: 700px; /* Set your desired maximum width */
+  max-width: 850px; /* Set your desired maximum width */
   margin: 0 auto; /* Center the element horizontally */
   text-align: center; /* Center the text within the element */
 }
@@ -72,7 +80,7 @@ h2 {
   background-color: #5D001E;
   padding: 50px;
   font-size: 12px;
-  
+  margin-top: 30px;
 }
 
 .about a {
@@ -115,8 +123,15 @@ h3{
   margin-right: auto; /* Push the logo to the far left */
 }
 
+.explore-projects{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-size: 35px;
+  color: #9A1750;
+}
+
 .projects-container{
-  padding: 50px;
+  padding-bottom: 80px;
   max-width: 780px;
   display: flex;
   justify-content: space-evenly;
@@ -191,6 +206,17 @@ div > .project-container6 {
   animation: shake 0.5s; /* Apply the shake animation on hover */
   animation-iteration-count: infinite; /* Keep shaking until hover ends */
 }
+
+.resume{
+  font-size: 35px;
+  color: #9A1750;
+}
+
+
+
+
+
+
 
 
 
