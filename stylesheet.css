@@ -52,15 +52,6 @@ nav > ul > li:hover {
   animation: moveText 0.3s ease;
 }
 
-@keyframes moveText {
-  0% {
-      transform: translateY(0);
-  }
-  100% {
-      transform: translateY(-15px);
-  }
-}
-
 h1 {
   font-family: 'overpass', sans-serif;
   font-size: 40px;
@@ -122,4 +113,108 @@ h3{
 
 .logo-container {
   margin-right: auto; /* Push the logo to the far left */
+}
+
+.projects-container{
+  padding: 50px;
+  max-width: 780px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div > .project-container1 {
+  max-width: 200px;
+  height: auto;
+
+}
+
+div > .project-container2 {
+  max-width: 200px;
+  height: auto;
+
+}
+
+div > .project-container3 {
+  max-width: 200px;
+  height: auto;
+
+}
+
+div > .project-container4 {
+  max-width: 200px;
+  height: auto;
+
+}
+
+div > .project-container5 {
+  max-width: 200px;
+  height: auto;
+
+}
+
+div > .project-container6 {
+  max-width: 200px;
+  height: auto;
+
+}
+
+
+.project-container1:hover{
+  animation: shake 0.5s; /* Apply the shake animation on hover */
+  animation-iteration-count: infinite; /* Keep shaking until hover ends */
+}
+
+.project-container2:hover{
+  animation: shake 0.5s; /* Apply the shake animation on hover */
+  animation-iteration-count: infinite; /* Keep shaking until hover ends */
+}
+
+.project-container3:hover{
+  animation: shake 0.5s; /* Apply the shake animation on hover */
+  animation-iteration-count: infinite; /* Keep shaking until hover ends */
+}
+
+.project-container4:hover{
+  animation: shake 0.5s; /* Apply the shake animation on hover */
+  animation-iteration-count: infinite; /* Keep shaking until hover ends */
+}
+
+.project-container5:hover{
+  animation: shake 0.5s; /* Apply the shake animation on hover */
+  animation-iteration-count: infinite; /* Keep shaking until hover ends */
+}
+
+.project-container6:hover{
+  animation: shake 0.5s; /* Apply the shake animation on hover */
+  animation-iteration-count: infinite; /* Keep shaking until hover ends */
+}
+
+
+
+
+
+
+@keyframes moveText {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-15px);
+  }
+}
+
+/* Define the shake animation */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); /* Start and end position (no movement) */
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px); /* Move left */
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px); /* Move right */
+  }
 }
