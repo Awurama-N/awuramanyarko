@@ -51,7 +51,7 @@ li > a {
 
 
 nav > ul > li {
-  color: #dfdfe2;
+  color: #E3E2DF;
 }
 
 nav > ul > li:hover {
@@ -70,7 +70,7 @@ h1 {
 h2 {
   font-family: 'overpass', sans-serif;
   font-weight: lighter;
-  color: #dfdfe2;
+  color: #E3E2DF;
   max-width: 850px; /* Set your desired maximum width */
   margin: 0 auto; /* Center the element horizontally */
   text-align: center; /* Center the text within the element */
