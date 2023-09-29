@@ -371,10 +371,42 @@ input[type="submit"]:hover {
 }
 
 
+.contact-container {
+  background-color: #9A1750;
+  margin-top: 20px; /* Reduced top margin */
+  padding: 20px; /* Adjusted padding for both top and sides */
+  text-align: left; /* Align text to the left within the footer */
+}
 
+.contact-item {
+  margin-bottom: 20px; /* Add spacing between contact items */
+  display: flex; /* Display items horizontally */
+  align-items: center; /* Align items vertically to the center */
+}
 
+.contact-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px; /* Add some spacing between icon and label */
+}
 
+.contact-label {
+  color: whitesmoke;
+  font-family: 'overpass', sans-serif;
+  font-size: 16px;
+  display: inline; /* Display the labels in-line with the icons */
+  margin-top: 5px; /* Add spacing between icon and label */
+}
 
+.contact-item a {
+  text-decoration: none; /* Remove underlines from links */
+  color: whitesmoke; /* Change link color */
+}
+
+.contact-item a:hover {
+  color: #e991a7; /* Change link color on hover */
+}
 
 
 
