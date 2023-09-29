@@ -67,6 +67,10 @@ h1 {
   color: #9A1750;
 }
 
+.head-title{
+  margin-top: 180px;
+}
+
 h2 {
   font-family: 'overpass', sans-serif;
   font-weight: lighter;
@@ -141,13 +145,47 @@ h3{
 
 
 .logo{
-    max-width: 130px;
+    max-width: 100px;
     height: auto; /* This ensures the aspect ratio is maintained */
 }
 
-.logo-container {
-  margin-right: auto; /* Push the logo to the far left */
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #9A1750; /* Change the background color as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+  z-index: 1000; /* Ensure it's above other content */
+  
 }
+
+.navbar .logo-container {
+  margin-right: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #e991a7; /* Change the color on hover */
+}
+
 
 .explore-projects{
   padding-top: 80px;
@@ -206,31 +244,37 @@ div > .project-container6 {
 .project-container1:hover{
   animation: shake 0.5s; /* Apply the shake animation on hover */
   animation-iteration-count: infinite; /* Keep shaking until hover ends */
+  cursor: pointer;
 }
 
 .project-container2:hover{
   animation: shake 0.5s; /* Apply the shake animation on hover */
   animation-iteration-count: infinite; /* Keep shaking until hover ends */
+  cursor: pointer;
 }
 
 .project-container3:hover{
   animation: shake 0.5s; /* Apply the shake animation on hover */
   animation-iteration-count: infinite; /* Keep shaking until hover ends */
+  cursor: pointer;
 }
 
 .project-container4:hover{
   animation: shake 0.5s; /* Apply the shake animation on hover */
   animation-iteration-count: infinite; /* Keep shaking until hover ends */
+  cursor: pointer;
 }
 
 .project-container5:hover{
   animation: shake 0.5s; /* Apply the shake animation on hover */
   animation-iteration-count: infinite; /* Keep shaking until hover ends */
+  cursor: pointer;
 }
 
 .project-container6:hover{
   animation: shake 0.5s; /* Apply the shake animation on hover */
   animation-iteration-count: infinite; /* Keep shaking until hover ends */
+  cursor: pointer;
 }
 
 .resume{
@@ -239,7 +283,7 @@ div > .project-container6 {
 }
 
 .resume-img{
-  max-width: 750px;
+  max-width: 300px;
   height: auto;
   display: flex;
   justify-content: space-evenly;
@@ -248,11 +292,84 @@ div > .project-container6 {
   margin: 0 auto;
 }
 
+.resume-img:hover{
+  cursor: pointer;
+}
+
 footer{
   background-color: #5D001E;
   margin-top: 40px;
   padding: 100px;
 }
+
+.suggestions{
+  text-align: center;
+  margin: 100px auto;
+  max-width: 800px;
+  font-family: 'overpass', sans-serif;
+  color: #9A1750;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  background-color: #bd5a73;
+  width: 150px; /* Increase the width to make it more visually appealing */
+  height: 50px; /* Increase the height for a bolder look */
+  color: whitesmoke;
+  border: none; /* Remove the border */
+  border-radius: 25px; /* Round the corners */
+  font-size: 20px; /* Increase the font size */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Change the background color on hover */
+input[type="submit"]:hover {
+  background-color: #9A1750;
+  transform: scale(1.05); /* Adding a slight scale effect on hover for creativity */
+}
+
+#home,
+#my-projects,
+#my-resume, #my-skills{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills{
+  font-size: 35px;
+  color: #9A1750;
+}
+
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-family: 'overpass', sans-serif;
+  color: #790a3b;
+  font-size: 20px;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 20px;
+  background-color: #ccc;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background-color: #5D001E; /* Your choice of progress bar color */
+  transition: width 4s ease; /* Animation duration and easing */
+}
+
 
 
 

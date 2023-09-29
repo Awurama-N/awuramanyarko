@@ -27,3 +27,47 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initial check in case the quote is already in the viewport
     handleQuoteAnimation();
   });
+
+  // Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    // Get a reference to your image element
+    const resumeImage = document.getElementById("resume-image");
+  
+    // Add a click event listener to trigger the download
+    resumeImage.addEventListener("click", function () {
+      // Replace "path_to_your_resume.pdf" with the actual path to your resume PDF file
+      const resumeFilePath = "Awurama Nyarko resume 2023 w copy.pdf";
+  
+      // Create an anchor element to trigger the download
+      const downloadLink = document.createElement("a");
+      downloadLink.href = resumeFilePath;
+      downloadLink.download = "Awurama_Nyarko_resume.pdf"; // Change the filename if needed
+  
+      // Simulate a click on the anchor element to start the download
+      downloadLink.click();
+    });
+  });
+  
+// Select all progress bars on the page
+const progressBars = document.querySelectorAll('.progress');
+
+// Initialize Intersection Observer
+const options = {
+    threshold: 0.5, // When 50% of the element is in view
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const progressBar = entry.target;
+            const width = progressBar.getAttribute('data-percent');
+            progressBar.style.width = width;
+            observer.unobserve(progressBar); // Stop observing this element after it's in view
+        }
+    });
+}, options);
+
+// Observe each progress bar
+progressBars.forEach((bar) => {
+    observer.observe(bar);
+});
