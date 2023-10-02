@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add a click event listener to trigger the download
     resumeImage.addEventListener("click", function () {
       // Replace "path_to_your_resume.pdf" with the actual path to your resume PDF file
-      const resumeFilePath = "Awurama Nyarko resume 2023 w copy.pdf";
+      const resumeFilePath = "Awurama Nyarko official resume .pdf";
   
       // Create an anchor element to trigger the download
       const downloadLink = document.createElement("a");
