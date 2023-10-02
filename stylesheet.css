@@ -432,3 +432,153 @@ input[type="submit"]:hover {
   }
 }
 
+@media (max-width: 768px) {
+
+  /* Default styles for all screen sizes */
+body {
+  background: #e991a7;
+  margin: 0;
+  font-family: 'overpass', sans-serif;
+  color: #E3E2DF; /* Default text color */
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  height: auto; /* Remove fixed height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Increase top padding */
+  background: #9A1750;
+  z-index: 1000; /* Ensure it's above other content */
+  position: relative; /* Make it a stacking context */
+}
+
+.logo-container {
+  margin-bottom: 20px; /* Add space between logo and navigation */
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center navigation links */
+  margin: 0;
+  padding: 0;
+  background: #9A1750; /* Match background color */
+  border-top: 2px solid #5D001E; /* Add a border above the navigation */
+}
+
+.navbar ul li {
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mobile-friendly Navigation Menu */
+.navbar ul {
+  display: none; /* Hide navigation links for small screens */
+}
+
+.navbar .mobile-menu {
+  display: block; /* Show the mobile menu icon */
+  color: #fff; /* Color for the mobile menu icon */
+  font-size: 24px; /* Size for the mobile menu icon */
+  cursor: pointer;
+}
+
+/* About Section */
+.about {
+  padding: 20px; /* Increase padding */
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px; /* Decrease font size */
+}
+
+/* Quote Container */
+#quote-container {
+  position: relative;
+  transform: translateX(0); /* Reset the transformation */
+  transition: transform 1s;
+  max-width: 90%; /* Make it narrower */
+  margin: 0 auto;
+  font-size: 18px; /* Decrease font size */
+}
+
+/* Projects Section */
+.explore-projects {
+  padding-top: 20px; /* Reduce padding */
+  padding-bottom: 20px; /* Reduce padding */
+  font-size: 24px;
+}
+
+.projects-container {
+  padding-bottom: 20px;
+  max-width: 90%; /* Make it narrower */
+  margin: 0 auto;
+}
+
+/* Resume Section */
+.resume {
+  font-size: 24px;
+}
+
+.resume-img {
+  max-width: 90%; /* Make it narrower */
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-container {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-label {
+  font-size: 14px; /* Decrease font size */
+  margin-top: 10px; /* Increase spacing */
+}
+
+/* Skills Section */
+.skills {
+  font-size: 24px;
+}
+
+.skill-name {
+  font-size: 16px; /* Decrease font size */
+}
+
+.progress-bar {
+  width: 100%; /* Full width progress bar */
+}
+
+.progress {
+  height: 20px; /* Reduce height */
+}
+
+}
